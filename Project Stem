@@ -1,0 +1,44 @@
+import random
+
+fname=input("What is your first name? ")
+lname=input("What is your last name? ")
+school=input("What school do you go to? ")
+print("You are " + fname + " " + lname + " that attends " + school + ".")
+
+grade=int(input("what is your numerical grade level? "))
+
+if(grade == 9):
+    print("You are a Freshman.")
+elif(grade == 10):
+    print("You are a Sophomore.")
+elif(grade == 11):
+    print("You are a Junior.")
+elif(grade == 12):
+    print("You are a Senior.")
+    
+feel=int(input("On a scale of 1-10, how are you feeling today? "))
+if(feel<1 or feel>10):
+        print("Read the directions bozo.")
+elif(feel<5 or feel==5):
+    print("Hope you feel better.")
+elif(feel>6 or feel==6):
+    print("At least your on the higher end of the spectrum.")
+    
+aifeel=(random.randint(1,10))
+print("well on a scale from 1-10, im feeling like a " + str(aifeel))
+    
+fnamecheck=input("What is your first name again? ")
+if(fnamecheck == fname):
+    print("Good job, you remember your first name.")
+else:
+    print("I don't even know how you managed to get your first name incorrect.")
+
+lnamecheck=input("What is you last name again? ")
+if(lnamecheck == lname):
+    print("Good job, you remember your last name.")
+else:
+    print("I don't even know how you managed to get your last name incorrect.")
+    
+print("Well farewell " + fname + " " + lname + ".")
+    
+    
